@@ -16,7 +16,7 @@ export default function Home() {
     width: 320,
   };
   return (
-    <main>
+    <main className="main">
       <h1>ノーマンウッド勉強会</h1>
       <canvas ref={inputRef} />
     </main>
