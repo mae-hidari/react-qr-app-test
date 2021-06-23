@@ -33,6 +33,7 @@ export default function Home() {
           onError={(error) => {
             alert(error);
           }}
+          legacyMode
         ></QrReader>
         <canvas ref={inputRef} />
       </main>
