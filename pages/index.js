@@ -15,6 +15,10 @@ export default function Home() {
     },
   });
 
+  const previewStyle = {
+    height: 240,
+    width: 320,
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -27,13 +31,13 @@ export default function Home() {
         <h1>テスト</h1>
         <QrReader
           delay={1000}
+          style={previewStyle}
           onScan={(data) => {
             alert(data);
           }}
           onError={(error) => {
             alert(error);
           }}
-          legacyMode
         ></QrReader>
         <canvas ref={inputRef} />
       </main>
